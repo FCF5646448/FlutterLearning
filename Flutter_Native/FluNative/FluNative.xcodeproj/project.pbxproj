@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191E97A62299184C001C16B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E97A52299184C001C16B1 /* AppDelegate.swift */; };
+		191E97A82299184C001C16B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E97A72299184C001C16B1 /* ViewController.swift */; };
+		191E97AB2299184C001C16B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191E97A92299184C001C16B1 /* Main.storyboard */; };
+		191E97AD2299184D001C16B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191E97AC2299184D001C16B1 /* Assets.xcassets */; };
+		191E97B02299184D001C16B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191E97AE2299184D001C16B1 /* LaunchScreen.storyboard */; };
+		191E97BC22992801001C16B1 /* AppDelegate+Flutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E97BB22992801001C16B1 /* AppDelegate+Flutter.swift */; };
+		191E97BE22992FBE001C16B1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E97BD22992FBE001C16B1 /* ViewController2.swift */; };
+		191E97C022993738001C16B1 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191E97BF22993737001C16B1 /* App.framework */; };
+		191E97C122993738001C16B1 /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 191E97BF22993737001C16B1 /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19227316229D13B50054EAB5 /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19227315229D13B50054EAB5 /* TargetViewController.swift */; };
+		4213934996593D68CE7EEE33 /* Pods_FluNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5BFA4BE4F932633554838 /* Pods_FluNative.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		191E97C222993738001C16B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				191E97C122993738001C16B1 /* App.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12839FF68A6B0CFCF1BFC625 /* Pods-FluNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluNative.release.xcconfig"; path = "Target Support Files/Pods-FluNative/Pods-FluNative.release.xcconfig"; sourceTree = "<group>"; };
+		17B5BFA4BE4F932633554838 /* Pods_FluNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FluNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		191E97A22299184C001C16B1 /* FluNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		191E97A52299184C001C16B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		191E97A72299184C001C16B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		191E97AA2299184C001C16B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		191E97AC2299184D001C16B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		191E97AF2299184D001C16B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		191E97B12299184D001C16B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191E97BB22992801001C16B1 /* AppDelegate+Flutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Flutter.swift"; sourceTree = "<group>"; };
+		191E97BD22992FBE001C16B1 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		191E97BF22993737001C16B1 /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
+		19227315229D13B50054EAB5 /* TargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
+		731081331B5A6CAD129839EF /* Pods-FluNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluNative.debug.xcconfig"; path = "Target Support Files/Pods-FluNative/Pods-FluNative.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		191E979F2299184C001C16B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191E97C022993738001C16B1 /* App.framework in Frameworks */,
+				4213934996593D68CE7EEE33 /* Pods_FluNative.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		191E97992299184B001C16B1 = {
+			isa = PBXGroup;
+			children = (
+				191E97BF22993737001C16B1 /* App.framework */,
+				191E97A42299184C001C16B1 /* FluNative */,
+				191E97A32299184C001C16B1 /* Products */,
+				5F7CE3C88C8E463CBC153E46 /* Pods */,
+				F4A43AE7DD9EC1A8F99A0E3A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		191E97A32299184C001C16B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				191E97A22299184C001C16B1 /* FluNative.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		191E97A42299184C001C16B1 /* FluNative */ = {
+			isa = PBXGroup;
+			children = (
+				191E97A52299184C001C16B1 /* AppDelegate.swift */,
+				191E97BB22992801001C16B1 /* AppDelegate+Flutter.swift */,
+				191E97A72299184C001C16B1 /* ViewController.swift */,
+				191E97BD22992FBE001C16B1 /* ViewController2.swift */,
+				191E97A92299184C001C16B1 /* Main.storyboard */,
+				191E97AC2299184D001C16B1 /* Assets.xcassets */,
+				191E97AE2299184D001C16B1 /* LaunchScreen.storyboard */,
+				191E97B12299184D001C16B1 /* Info.plist */,
+				19227315229D13B50054EAB5 /* TargetViewController.swift */,
+			);
+			path = FluNative;
+			sourceTree = "<group>";
+		};
+		5F7CE3C88C8E463CBC153E46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				731081331B5A6CAD129839EF /* Pods-FluNative.debug.xcconfig */,
+				12839FF68A6B0CFCF1BFC625 /* Pods-FluNative.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4A43AE7DD9EC1A8F99A0E3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B5BFA4BE4F932633554838 /* Pods_FluNative.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		191E97A12299184C001C16B1 /* FluNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191E97B42299184D001C16B1 /* Build configuration list for PBXNativeTarget "FluNative" */;
+			buildPhases = (
+				128DAE67BBD64ED8A1EECBB7 /* [CP] Check Pods Manifest.lock */,
+				191E979E2299184C001C16B1 /* Sources */,
+				191E979F2299184C001C16B1 /* Frameworks */,
+				191E97A02299184C001C16B1 /* Resources */,
+				834BC35BB088C09A1D675F0F /* [CP] Embed Pods Frameworks */,
+				191E97BA22991F67001C16B1 /* Run Script */,
+				191E97C222993738001C16B1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FluNative;
+			productName = FluNative;
+			productReference = 191E97A22299184C001C16B1 /* FluNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		191E979A2299184B001C16B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "冯才凡";
+				TargetAttributes = {
+					191E97A12299184C001C16B1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 191E979D2299184B001C16B1 /* Build configuration list for PBXProject "FluNative" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 191E97992299184B001C16B1;
+			productRefGroup = 191E97A32299184C001C16B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				191E97A12299184C001C16B1 /* FluNative */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		191E97A02299184C001C16B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191E97B02299184D001C16B1 /* LaunchScreen.storyboard in Resources */,
+				191E97AD2299184D001C16B1 /* Assets.xcassets in Resources */,
+				191E97AB2299184C001C16B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		128DAE67BBD64ED8A1EECBB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FluNative-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		191E97BA22991F67001C16B1 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 删除本地Flutter文件夹\nrm -rf -- \"$SOURCE_ROOT/Flutter\"\n# 再生成Flutter文件夹\nmkdir -p \"$SOURCE_ROOT/Flutter\"\n\n# 编译生成\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\n# 将胶水文件copy到本地文件夹\ncp -r -- \"$FLUTTER_APPLICATION_PATH/.ios/Flutter/flutter_assets\" \"$SOURCE_ROOT/Flutter\"\ncp -r -- \"$FLUTTER_APPLICATION_PATH/.ios/Flutter/App.framework\" \"$SOURCE_ROOT/Flutter\"\n\n";
+		};
+		834BC35BB088C09A1D675F0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FluNative/Pods-FluNative-frameworks.sh",
+				"${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine/Flutter.framework",
+				"${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework",
+				"${BUILT_PRODUCTS_DIR}/image_picker/image_picker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlutterPluginRegistrant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/image_picker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FluNative/Pods-FluNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		191E979E2299184C001C16B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191E97BC22992801001C16B1 /* AppDelegate+Flutter.swift in Sources */,
+				19227316229D13B50054EAB5 /* TargetViewController.swift in Sources */,
+				191E97BE22992FBE001C16B1 /* ViewController2.swift in Sources */,
+				191E97A82299184C001C16B1 /* ViewController.swift in Sources */,
+				191E97A62299184C001C16B1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		191E97A92299184C001C16B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191E97AA2299184C001C16B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		191E97AE2299184D001C16B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191E97AF2299184D001C16B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		191E97B22299184D001C16B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		191E97B32299184D001C16B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		191E97B52299184D001C16B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 731081331B5A6CAD129839EF /* Pods-FluNative.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADX9ZP8Q93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				INFOPLIST_FILE = FluNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fcf.com.FluNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		191E97B62299184D001C16B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12839FF68A6B0CFCF1BFC625 /* Pods-FluNative.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADX9ZP8Q93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				INFOPLIST_FILE = FluNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fcf.com.FluNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		191E979D2299184B001C16B1 /* Build configuration list for PBXProject "FluNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191E97B22299184D001C16B1 /* Debug */,
+				191E97B32299184D001C16B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191E97B42299184D001C16B1 /* Build configuration list for PBXNativeTarget "FluNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191E97B52299184D001C16B1 /* Debug */,
+				191E97B62299184D001C16B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 191E979A2299184B001C16B1 /* Project object */;
+}

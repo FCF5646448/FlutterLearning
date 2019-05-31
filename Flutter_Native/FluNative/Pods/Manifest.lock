@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - image_picker
+  - image_picker (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `../flutter_module/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - image_picker (from `../flutter_module/.ios/Flutter/.symlinks/image_picker/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../flutter_module/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+  image_picker:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/image_picker/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  FlutterPluginRegistrant: a56b29c7507aedc83e1c6fe169db0d45c0e4c293
+  image_picker: ee00aab0487cedc80a304085219503cc6d0f2e22
+
+PODFILE CHECKSUM: d7536d62b747672d7afe19c62ffb1caaa233dacc
+
+COCOAPODS: 1.6.0.beta.1
