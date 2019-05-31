@@ -1,4 +1,4 @@
-#Sat May 25 11:19:22 CST 2019
-base.0=/Users/fengcaifan/Documents/practice/Flutter/flutter_app/build/app/intermediates/transforms/dexMerger/debug/0
+#Fri May 31 17:00:12 CST 2019
+base.0=/Users/fengcaifan/Documents/github/Flutter/flutter_app/build/app/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
 path.0=classes.dex

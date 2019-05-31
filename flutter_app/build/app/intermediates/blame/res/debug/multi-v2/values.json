@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fengcaifan/Documents/practice/Flutter/flutter_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/fengcaifan/Documents/github/Flutter/flutter_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/fengcaifan/Documents/practice/Flutter/flutter_app/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/fengcaifan/Documents/github/Flutter/flutter_app/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
