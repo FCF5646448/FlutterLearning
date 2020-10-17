@@ -187,56 +187,55 @@ BoxDecoration(
               ),
 ```
 
-### 布局
-
+### 布局 
+指包含某些布局特性的Widget
 #### Row & Column
-row：横向水平布局；Column：纵向布局
-mainAxisAlignment 主轴分布方式；
-crossAxisAlignment 交叉轴参照方式
+Row：chidren会水平排列在一起；Column：chidren会水平竖直在一起。
+mainAxisAlignment 主轴排列分布，可以居中、平均分布等
+crossAxisAlignment 交叉轴方向，一般用于设置统一的参照线
 ```
-Column(
+Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly, //主轴 spaceAround说明是平均分布在水平方向
-        crossAxisAlignment: CrossAxisAlignment.center, //交叉轴 start 说明icon会在垂直方向的顶部对齐
+        crossAxisAlignment: CrossAxisAlignment.start, //交叉轴 start 说明icon会在垂直方向的顶部对齐
         children: <Widget>[
           IconBadge(Icons.pool),
-          IconBadge(Icons.accessible_forward, size: 12.0),
+          IconBadge(Icons.accessible_forward, size: 64.0),
+          IconBadge(Icons.business_center),
         ],
-     ),
+      ),
+
 ```
-#### SizedBox 
-固定大小的控件
+#### SizeBox
+固定尺寸的小控件
 ```
-// SizedBox 固定尺寸的部件
-          //这个box作为间隔使用
+//这个box作为间隔使用
           SizedBox( 
-            height: 5.0
+            height: 20.0
           ),
           SizedBox(
-            width: 16,
-            height: 16,
+            width: 80,
+            height: 80,
             child: Container(
-              // 内容对齐位置 大小在0~1之间
+              // 内容对齐位置 大小在0~1之间, 这里内容在右下角
               alignment: Alignment(1.0, 1.0),
               decoration: BoxDecoration(
                 color: Color.fromRGBO(3, 54, 255, 1.0),
                 borderRadius: BorderRadius.circular(8.0),
               ),
-              // 这个子部件设置的size也没用
               child: Icon(Icons.ac_unit, color: Colors.white, size: 32.0),
             ),
           ),
 ```
-#### Stack
-从底往上存放的布局控件, 可以使用Positioned控件控制在stack的位置
+#### stack
+stack里的小部件会从底层往上叠加到一块。可以添加一些Position小部件，Position小部件可以设置距离stack最大控件的上下左右位置。
 ```
 Stack(
             children: <Widget>[
-              IconBadge(Icons.accessible_forward, size: 36.0),
-              //固定位置
+              IconBadge(Icons.accessible_forward, size: 128.0),
               Positioned(
                 child: SizedBox(
-                  width: 32.0,
-                  height: 32.0,
+                  width: 44.0,
+                  height: 44.0,
                   child: Icon(Icons.ac_unit, color: Colors.white, size: 20.0),
                 ),
               ),
@@ -244,18 +243,18 @@ Stack(
           ),
 ```
 #### AspectRatio
-比例控件
+可以设置子控件的宽高比例。它会使用子控件的最大的宽度，然后根据比例调整高度。
 ```
 AspectRatio(
-            //宽高比是3：2, 宽是整个屏幕的宽度
-            aspectRatio: 32.0/2.0,
+            //宽高比是3：2
+            aspectRatio: 3.0/2.0,
             child: Container(
               color: Color.fromRGBO(3, 54, 255, 1.0)
             ),
           ),
 ```
-#### ConstrainedBox
-宽高受限的控件
+#### ConstraintedBox 
+可以给子控件添加限制，比如说最小最大宽度。
 ```
 ConstrainedBox(
             constraints: BoxConstraints(
@@ -267,4 +266,3 @@ ConstrainedBox(
             ),
           ),
 ```
-
