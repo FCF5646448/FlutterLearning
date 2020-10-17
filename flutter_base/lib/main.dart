@@ -4,6 +4,7 @@ import './Demo/listView_demo.dart';
 import './Demo/drawer_demo.dart';
 import './Demo/botton_navigation_bar_demo.dart';
 import './Demo/basic_demo.dart';
+import './Demo/layout_demo.dart';
 
 void main() => runApp(App());
 
@@ -65,7 +66,8 @@ class Home extends StatelessWidget {
           children: <Widget>[
             ListViewDemo(),
             BasicDemo(),
-            Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
+            // Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
+            LayoutDemo(),
           ],
         ),
         drawer: DrawerDemo(),
