@@ -26,6 +26,7 @@ class LayoutDemo extends StatelessWidget {
                 color: Color.fromRGBO(3, 54, 255, 1.0),
                 borderRadius: BorderRadius.circular(8.0),
               ),
+              // 这个子部件设置的size也没用
               child: Icon(Icons.ac_unit, color: Colors.white, size: 32.0),
             ),
           ),
@@ -45,7 +46,7 @@ class LayoutDemo extends StatelessWidget {
           ),
           //比例
           AspectRatio(
-            //宽高比是3：2
+            //宽高比是3：2, 宽是整个屏幕的宽度
             aspectRatio: 32.0/2.0,
             child: Container(
               color: Color.fromRGBO(3, 54, 255, 1.0)
