@@ -1,11 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_base/Demo/sliver_demo.dart';
 import './Demo/listView_demo.dart';
 import './Demo/drawer_demo.dart';
 import './Demo/botton_navigation_bar_demo.dart';
 import './Demo/basic_demo.dart';
 import './Demo/layout_demo.dart';
 import './Demo/view_demo.dart';
+import './Demo/sliver_demo.dart';
 
 void main() => runApp(App());
 
@@ -27,7 +29,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 5,
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
@@ -61,6 +63,7 @@ class Home extends StatelessWidget {
               Tab(icon: Icon(Icons.change_history)),
               Tab(icon: Icon(Icons.directions_bike)),
               Tab(icon: Icon(Icons.view_quilt)),
+              Tab(icon: Icon(Icons.list_alt)),
             ],
           ),
         ),
@@ -70,6 +73,7 @@ class Home extends StatelessWidget {
             BasicDemo(),
             LayoutDemo(),
             ViewDemo(),
+            SliverDemo(),
           ],
         ),
         drawer: DrawerDemo(),
