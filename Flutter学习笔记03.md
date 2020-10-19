@@ -266,3 +266,161 @@ ConstrainedBox(
             ),
           ),
 ```
+
+### 视图
+
+#### PageView
+主要属性: pageSnapping: 是否回弹，reverse：内容顺序是否倒置，scrollDirection：滚动方向
+```
+PageView(
+	// pageSnapping: false, // 是否分页滚动
+      reverse: true, //数据源是否倒序
+      scrollDirection: Axis.vertical, //滚动方向
+      onPageChanged: (currentPage)=>debugPrint('page: $currentPage'), //滚动结果回调
+      children: <Widget>[
+        Container(
+          color: Colors.brown[900],
+          alignment: Alignment(0.0,0.0),
+        ),
+        Container(
+          color: Colors.grey[900],
+          alignment: Alignment(0.0,0.0),
+        ),
+        Container(
+          color: Colors.blueGrey[900],
+          alignment: Alignment(0.0,0.0),
+        ),
+      ],
+    );
+
+// 也可以使用PageView.builder()方法进行创建。
+class PageViewBuildDemo extends StatelessWidget {
+  Widget _pageItemBuider(BuildContext context, int index) {
+    return Stack(
+      children: <Widget>[
+        SizedBox.expand(
+          child: Image.network(
+            posts[index].imageUrl, 
+            fit: BoxFit.cover,
+          ),
+        ),
+        Positioned(
+          bottom: 8.0,
+          left: 8.0,  
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                posts[index].title,
+                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+              ),
+              Text(
+                posts[index].author,
+                style: TextStyle(color: Colors.white),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return PageView.builder(
+      itemCount: posts.length,
+      itemBuilder: _pageItemBuider,
+    );
+  }
+}
+```
+
+#### GridView
+
+GridView是网格视图，类似iOS的CollectionView，GridView有三种创建方式：
+GridView.count：
+
+```
+class GridViewCountDemo extends StatelessWidget {
+  List<Widget> _buildTitles(int length) {
+    return List.generate(length, (index) {
+      return Container(
+          color: Colors.grey[300],
+          alignment: Alignment(0.0, 0.0),
+          child: Text(
+            'Item $index',
+            style: TextStyle(fontSize: 18.0, color: Colors.grey),
+            ),
+        );
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.count(
+      crossAxisCount: 4, //在交叉轴显示的数量
+      crossAxisSpacing: 16.0, //交叉轴 item之间的空隙
+      mainAxisSpacing: 16.0, // 主轴 item之间的空隙
+      children: _buildTitles(100),
+    );
+  }
+}
+```
+GridView.extend：
+```
+class GridViewExtendDemo extends StatelessWidget {
+  List<Widget> _buildTitles(int length) {
+    return List.generate(length, (index) {
+      return Container(
+          color: Colors.grey[300],
+          alignment: Alignment(0.0, 0.0),
+          child: Text(
+            'Item $index',
+            style: TextStyle(fontSize: 18.0, color: Colors.grey),
+            ),
+        );
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.extent(
+      maxCrossAxisExtent: 100, //交叉轴上 item的最大尺寸
+      crossAxisSpacing: 16.0, //交叉轴 item之间的空隙
+      mainAxisSpacing: 16.0, // 主轴 item之间的空隙
+      children: _buildTitles(posts.length),
+    );
+  }
+}
+```
+GridView.builder 
+```
+class GridViewBuilderDemo extends StatelessWidget {
+
+  Widget _gridItemBuilder(BuildContext context, int index) {
+    return Container(
+      child: Image.network(
+        posts[index].imageUrl,
+        fit: BoxFit.cover,
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      padding: EdgeInsets.all(8.0),
+      itemCount: posts.length,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 4, // 交叉轴数量
+        crossAxisSpacing: 8.0, //交叉轴 间隔
+        mainAxisSpacing: 8.0, //主轴 间隔
+      ), 
+      itemBuilder: _gridItemBuilder,
+    );
+  }
+}
+```
+
+
+
