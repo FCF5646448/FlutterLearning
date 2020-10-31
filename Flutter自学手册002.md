@@ -4,7 +4,8 @@
 
 #### 快捷键
 
-- command + shift + p调起命令面板
+- command + shift + p 调起命令面板 
+- shift+option+F  格式化代码
 
 #### 命令行 直接在VSCode下的命令面板中使用
 
@@ -612,4 +613,10 @@ class SliverListDemo extends StatelessWidget {
 
 
 
+
+https://www.youtube.com/watch?v=qQ75cxc5q8o
+
+
+
+https://www.youtube.com/watch?v=qQ75cxc5q8o
 

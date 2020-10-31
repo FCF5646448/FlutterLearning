@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_view/constants.dart';
-import './model/posts.dart';
+import 'package:flutter_view/widgets/details_screen.dart';
+import './widgets/category_card.dart';
+import './widgets/bottom_nav_bar.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,6 +32,7 @@ class HomeScreen extends StatelessWidget {
     var size = MediaQuery.of(context).size;
 
     return Scaffold(
+      bottomNavigationBar: BottomNavBar(),
       body: Stack(
         children: [
           Container(
@@ -44,7 +47,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           SafeArea(
-            child: Padding(
+              child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start, //要有多个
@@ -90,74 +93,22 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Expanded(
                   //不布套Expended，则内容没法显示
-                  child: Card(),
+                  child: CategoryCard(
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context){
+                          return DetailsScreen();
+                        }),  
+                      );
+                    },
+                  ),
                 ),
               ],
             ),
           )),
         ],
       ),
-    );
-  }
-}
-
-class Card extends StatelessWidget {
-
-  List<Widget> _buildCard(BuildContext context , int length) {
-    return List.generate(length, (index) {
-      return Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(13),
-          boxShadow: [
-            BoxShadow(
-              offset: Offset(0, 17),
-              blurRadius: 17,
-              spreadRadius: -23,
-              color: kShadowColor,
-            )
-          ],
-        ),
-        child: Column(
-          children: [
-            Container(
-              // 图片不知道怎么设置圆角
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(13),
-              ),
-              padding: EdgeInsets.all(5),
-              child: Image.network(
-                posts[index].imageUrl,
-                fit: BoxFit.cover,
-              ),
-            ),
-            Spacer(),
-            Text(
-              posts[index].title,
-              textAlign: TextAlign.center,
-              style:
-                  Theme.of(context).textTheme.headline6.copyWith(fontSize: 15),
-            ),
-            Text(
-              posts[index].author,
-              textAlign: TextAlign.center,
-              style:
-                  Theme.of(context).textTheme.headline6.copyWith(fontSize: 13),
-            ),
-          ],
-        ),
-      );
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return GridView.count(
-      crossAxisCount: 2, //交叉轴数量
-      crossAxisSpacing: 20, //交叉轴间隔
-      mainAxisSpacing: 20, //主轴间隔
-      childAspectRatio: 0.85, //比例
-      children:_buildCard(context, posts.length)
     );
   }
 }
